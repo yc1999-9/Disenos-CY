@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseños CY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fffdf9;
+            color: #1e1e1e;
+        }
+        header {
+            background-color: #0a0a0a;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header img {
+            height: 80px;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .galeria img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .frase {
+            margin-top: 0.5rem;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            background-color: #20b758;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 700px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo_disenos_cy.png" alt="Logo Diseños CY">
+        <h1>Bienvenidos a Diseños CY</h1>
+        <p>Diseño personalizado para cocinas, oficinas y clósets</p>
+    </header>
+
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="galeria">
+            <div>
+                <img src="galeria_cocina.png" alt="Diseño de Cocina">
+                <p class="frase">"El corazón del hogar también merece diseño."</p>
+            </div>
+            <div>
+                <img src="galeria_oficina.png" alt="Diseño de Oficina">
+                <p class="frase">"Espacios que inspiran productividad y elegancia."</p>
+            </div>
+            <div>
+                <img src="galeria_closet.png" alt="Diseño de Clóset">
+                <p class="frase">"Organización que refleja tu estilo."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Déjanos tus datos y pronto te contactaremos.</p>
+        <iframe src="https://form.jotform.com/250614866059059"></iframe>
+    </section>
+
+    <a class="whatsapp-float" href="https://wa.me/qr/3FDZDTZ56QKHB1" target="_blank" title="Contáctanos por WhatsApp">
+        💬
+    </a>
+</body>
+</html>
